@@ -17,8 +17,8 @@ Proyecto de automatización de pruebas integrando el framework Cypress.io, Cucum
 * Navegadores compatibles: Chrome, Firefox, Edge, Electron
 * Para poder visualizar los reportes integrado Cypress con Cucumber es necesario seguir las siguientes instrucciones:
    Ir a la dirección: https://github.com/cucumber/json-formatter/releases/tag/v19.0.0
-   Descargarse el fichero: cucumber-json-formatter-windows-amd64
-   Renombrar el fichero con el nombre: cucumber-json-formatter.exe
+   Descargarse el fichero: cucumber-json-formatter-windows-amd64. 
+   Renombrar el fichero con el nombre: cucumber-json-formatter.exe. 
    Copiar este fichero en el path de mi sistema windows (para sistema operativo windows 64) en mi caso en la siguiente dirección: C:\Windows\System32
 
 ## Instalación
@@ -47,11 +47,11 @@ node .\cucumber-html-report.js
 ## Ejemplos
 ![Multiple Cucumber HTML Reporter](EjemploReporte.jpg)
 Los resultados fueron al ejecutar las pruebas fueron:
-  Features: 3
-  Ecenarios: 6
-  Pasó: 6
-  Falló: 0
-  Tiempo de ejecución: 00:27
+  * Features: 3
+  * Ecenarios: 6
+  * Pasó: 6
+  * Falló: 0
+  * Tiempo de ejecución: 00:27
 
 ## Estado del proyecto
 
@@ -59,6 +59,6 @@ Finalizado
 
 ## Contacto
 
-Nombre: Yesleny Becera Torreira
-Celular: 0984757830
-email: ybecerra2005@gmail.com
+* Nombre: Yesleny Becera Torreira
+* Celular: 0984757830
+* email: ybecerra2005@gmail.com
