@@ -46,7 +46,7 @@ node .\cucumber-html-report.js
 
 ## Ejemplos
 ![Multiple Cucumber HTML Reporter](EjemploReporte.jpg)
-Los resultados fueron al ejecutar las pruebas fueron:
+Los resultados al ejecutar las pruebas fueron:
   * Features: 3
   * Ecenarios: 6
   * Pasó: 6
