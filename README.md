@@ -46,6 +46,12 @@ node .\cucumber-html-report.js
 
 ## Ejemplos
 ![Multiple Cucumber HTML Reporter](EjemploReporte.jpg)
+Los resultados fueron al ejecutar las pruebas fueron:
+  Features: 3
+  Ecenarios: 6
+  Pasó: 6
+  Falló: 0
+  Tiempo de ejecución: 00:27
 
 ## Estado del proyecto
 
