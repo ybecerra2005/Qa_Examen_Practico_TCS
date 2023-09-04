@@ -1,0 +1,472 @@
+[
+  {
+    "description": "   Validar los servicios de login en https://api.demoblaze.com/login",
+    "elements": [
+      {
+        "description": "",
+        "id": "pruebas-de-api-de-la-pagina-https://www.demoblaze.com/;escenario-1,-login-usuario-y-password-correcto",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Escenario 1, LogIn Usuario y Password CORRECTO",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "jmsuarez2005"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Al hacer una peticion POST a la url \"https://api.demoblaze.com/login\" con usuario correcto y password correcto:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 519000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "cuando el usuario es correcto y el password es correcto el response code es 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "el cuerpo de la respuesta debe contener property \"Auth_token\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "pruebas-de-api-de-la-pagina-https://www.demoblaze.com/;escenario-2,-login-usuario-correcto-y-password-incorrecto",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Escenario 2, LogIn Usuario CORRECTO y Password INCORRECTO",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "jmsuarez2005"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "1234"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "Al hacer una petición POST a la url \"https://api.demoblaze.com/login\" con usuario correcto y password incorrecto:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "cuando el response code es 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "el cuerpo de la respuesta debe tener la property \"errorMessage\" y valor \"Wrong password.\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "pruebas-de-api-de-la-pagina-https://www.demoblaze.com/;escenario-3,-login-usuario-incorrecto-y-password-correcto",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Escenario 3, LogIn Usuario INCORRECTO y Password CORRECTO",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "jmsuarez2007"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "Al hacer una petición POST a la url \"https://api.demoblaze.com/login\" con usuario incorrecto y password correcto:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 183000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "cuando el usuario es incorrecto y el password es correcto el response code es 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "la respuesta de la petición debe tener la property \"errorMessage\" y valor \"User does not exist.\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "pruebas-de-api-de-la-pagina-https://www.demoblaze.com/",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Pruebas de API de la pagina https://www.demoblaze.com/",
+    "tags": [],
+    "uri": "cypress\\e2e\\features\\apiLoginTest.feature"
+  },
+  {
+    "description": "   Validar los servicios de signup en la pagina https://www.demoblaze.com/signup",
+    "elements": [
+      {
+        "description": "",
+        "id": "pruebas-de-api-de-la-pagina-https://www.demoblaze.com/;escenario-1,-crear-un-nuevo-usuario",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Escenario 1, Crear un nuevo usuario",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "random"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "2020"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Al hacer una peticion POST a la url \"https://api.demoblaze.com/signup\" con usuario nuevo:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 240000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "cuando el usuario es nuevo el response code es 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "el cuerpo de la respuesta debe ser vacía",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "pruebas-de-api-de-la-pagina-https://www.demoblaze.com/;escenario-2,-crear-un-usuario-existente",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Escenario 2, Crear un usuario existente",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "username",
+                      "jmsuarez2005"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "Al hacer una petición POST a la url \"https://api.demoblaze.com/signup\" con usuario existente:",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 211000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "cuando el usuario existe el response code es 200",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "el cuerpo de la respuesta cuando el user existe debe tener la property \"errorMessage\" y valor \"This user already exist.\"",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "pruebas-de-api-de-la-pagina-https://www.demoblaze.com/",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Pruebas de API de la pagina https://www.demoblaze.com/",
+    "tags": [],
+    "uri": "cypress\\e2e\\features\\apiSignupTest.feature"
+  },
+  {
+    "description": "   Validar la compra de productos en la pagina https://www.demoblaze.com/",
+    "elements": [
+      {
+        "description": "",
+        "id": "validar-el-flujo-de-compra-de-la-pagina-https://www.demoblaze.com/;comprar-dos-productos",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Comprar dos productos",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "la pagina web para hacer una compra",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1724000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "se adiciona productos al carro de compra",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17508000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "se accede al carro de compra",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 774000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "se ordena la compra de productos",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 443000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "se completa el formulario",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2661000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "se realiza la compra",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 314000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "se finaliza la compra de los productos",
+            "match": {
+              "location": "not available:0"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 171000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "validar-el-flujo-de-compra-de-la-pagina-https://www.demoblaze.com/",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Validar el flujo de compra de la pagina https://www.demoblaze.com/",
+    "tags": [],
+    "uri": "cypress\\e2e\\features\\carritoDeCompra.feature"
+  }
+]

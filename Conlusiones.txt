@@ -1,0 +1,14 @@
+Se puede concluir que:
+
+1- Se pudo realizar la ejecución de las pruebas de manera satisfactoriamente.
+2- Las pruebas cubren todas las features y escenarios identificados de los flujos descritos a probar en las indicaciones del examen.
+3- Los resultados fueron:
+  Features: 3
+  Ecenarios: 6
+  Pasó: 6
+  Falló: 0
+  Tiempo de ejecución: 00:27
+4- Observaciones:
+  La página Web https://www.demoblaze.com se demoraba en renderizar todos sus elementos web por lo que fue necesario introducir varias esperas 
+  para que las pruebas fueran exitosas.
+
